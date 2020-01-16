@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nanopublications</title>
+<style>
+body { margin: 20px; font-family: monaco,monospace; font-size: 11pt; color: #444; }
+a { color: #000; text-decoration: none; }
+a:hover { color: #666; }
+.nanopub { margin: 0 0 30px 0; padding: 0px 10px 10px 10px; border-radius: 10px; border: solid; border-width: 1px; }
+.nanopub-prefixes { margin-top: 10px; }
+.nanopub-head { background: #e8e8e8; padding: 10px; margin-top: 10px; border-radius: 10px; }
+.nanopub-assertion { background: #99ccff; padding: 10px; margin-top: 10px; border-radius: 10px; }
+.nanopub-provenance { background: #f3a08c; padding: 10px; margin-top: 10px; border-radius: 10px; }
+.nanopub-pubinfo { background: #ffff66; padding: 10px; margin-top: 10px; border-radius: 10px; }
+</style>
+</head>
+<body>
+<div class="nanopub">
+<div class="nanopub-prefixes">
+...
+</div>
+<div class="nanopub-assertion">
+<span class="nanopub-context-switch"><a href="http://purl.org/np/assertion">:assertion</a> {<br/></span>
+&nbsp;&nbsp;&lt;<a href="https://adecentweb.org/events/decentralised-web-symposium/#event">https://adecentweb.org/events/decentralised-web-symposium/#event</a>&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> "Decentralised Web Symposium" ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://purl.org/dc/terms/subject">dct:subject</a> <a href="http://dbpedia.org/resource/Decentralization">dbpedia:Decentralization</a> , <a href="http://dbpedia.org/resource/World_Wide_Web">dbpedia:World_Wide_Web</a> . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+<div class="nanopub-provenance">
+<span class="nanopub-context-switch"><a href="http://purl.org/np/provenance">:provenance</a> {<br/></span>
+&nbsp;&nbsp;<a href="http://purl.org/np/assertion">:assertion</a> <a href="http://www.w3.org/ns/prov#hadPrimarySource">prov:hadPrimarySource</a> &lt;<a href="https://adecentweb.org/events/">https://adecentweb.org/events/</a>&gt; . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+<div class="nanopub-pubinfo">
+<span class="nanopub-context-switch"><a href="http://purl.org/np/pubinfo">:pubinfo</a> {<br/></span>
+&nbsp;&nbsp;<a href="http://purl.org/np/">:</a> <a href="http://purl.org/dc/terms/created">dct:created</a> "2020-01-16T09:26:02.348+01:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://purl.org/dc/terms/creator">dct:creator</a> <a href="https://orcid.org/0000-0002-1267-0234">orcid:0000-0002-1267-0234</a> . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+</div>
