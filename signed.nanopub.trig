@@ -1,0 +1,37 @@
+@prefix this: <http://purl.org/np/RAMYeV4c--IYWc2uf74z9rS9_nPwWVvAw0ZecQhs_NfhU> .
+@prefix sub: <http://purl.org/np/RAMYeV4c--IYWc2uf74z9rS9_nPwWVvAw0ZecQhs_NfhU#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  <https://adecentweb.org/events/decentralised-web-symposium/#event> dct:subject dbpedia:Decentralization,
+      dbpedia:World_Wide_Web;
+    rdfs:label "Decentralised Web Symposium" .
+}
+
+sub:provenance {
+  sub:assertion prov:hadPrimarySource <https://adecentweb.org/events/> .
+}
+
+sub:pubinfo {
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwUtewGCpT5vIfXYE1bmf/Uqu1ojqnWdYxv+ySO80ul8Gu7m8KoyPAwuvaPj0lvPtHrg000qMmkxzKhYknEjq8v7EerxZNYp5B3/3+5ZpuWOYAs78UnQVjbHSmDdmryr4D4VvvNIiUmd0yxci47dTFUj4DvfHnGd6hVe5+goqdcwIDAQAB";
+    npx:hasSignature "i1jsmdYUc71n4GZK6cQ4cNELONxfPD/56jrapAWc+NsPOVCaqhrJaI4HVCacmTlWwgmFzgI4WjU2UD15XLQYCnSbNADxy6yVLn7VBHsFvWlv7t9+ObXzrQrJOq7B2YhbG0BcJgDKt33PdFlUkDK1hxtmcWzXsnlh6kGEfxRAfO0=";
+    npx:hasSignatureTarget this: .
+  
+  this: dct:created "2020-01-16T09:26:02.348+01:00"^^xsd:dateTime;
+    dct:creator orcid:0000-0002-1267-0234 .
+}
